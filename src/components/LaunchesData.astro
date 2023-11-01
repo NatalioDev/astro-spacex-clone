@@ -1,0 +1,29 @@
+--- 
+// Importación de módulos
+import CardLaunch from './CardLaunch.astro';
+
+// Importamos los datos de la petición que hace nuestra API de SpaceX
+import { getLatestLaunches } from '../service/spacesx'
+
+//Guardamos esos datos en una variable para luego poder utilizarlos.
+const launches = await getLatestLaunches()
+
+---
+
+<!-- Creamos nuestro componente para luego pasar los datos a nuestro CardLaunch -->
+<div class="mx-8">
+    <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+    {
+        // Usamos map para pasar los datos
+        launches.map(({ id, links, success, name, details }) => (
+            <CardLaunch
+                id={id}
+                img={links.patch.small}
+                success={success}
+                name={name}
+                details={details}
+            />
+        ))
+    }
+    </div>
+</div>

@@ -1,0 +1,41 @@
+---
+import ButtonBack from "../components/ButtonBack.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Psyche Mission">
+    <div class="w-full mb-0">
+        <ButtonBack direction="/"/>
+        <!-- Muestra la imagen de la pagina -->
+        <div class="h-screen w-full">
+          <div 
+              class="w-full h-screen bg-no-repeat bg-cover bg-center flex justify-start items-center" 
+              style="background-image: url(https://sxcontent9668.azureedge.us/cms-assets/assets/Psyche_outsidehangar_IMG_3705_desktop_0eaa6fdd97.jpg);">
+          </div>
+        </div>
+        <!-- Se muestra la fecha y el titulo -->
+        <div class="h-24 m-0 block relative py-0 -mt-52 ">
+            <div class="text-left w-1/2 max-w-lg ml-12 mt-60">
+                <p class="uppercase opacity-100 font-semibold m-0 mb-5 text-sm md:text-lg text-gray-500">October 17, 2023</p>
+                <h1 class="m-auto font-bold text-lg md:text-2xl lg:text-4xl uppercase opacity-100">Psyche Mission</h1>
+            </div>
+        </div>
+        <!-- Se muestra el contenido -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-2 gap-5 px-12 py-0 my-8 w-auto">
+            <div class="text-left mt-5 text-sm font-mono"
+                style="flex-basis: 50%;"
+            >
+                <p class="lg:mt-5 -mt-12">
+                    On Friday, October 13 at 10:19 a.m. ET, Falcon Heavy launched NASA's Psyche mission to an interplanetary transfer orbit from Launch Complex 39A (LC-39A) at Kennedy Space Center in Florida. This was the fourth launch for the side boosters, both of which previously supported the USSF-44, USSF-67, and Hughes JUPTER 3 missions.
+                </p>
+            </div>
+            <div class="text-left mt-5 text-sm font-mono"
+                style="flex-basis: 50%;"
+            >
+                <p class="lg:mt-5 md:-mt-12 sm:-mt-12 mt-0">
+                    The Psyche spacecraft will travel to a metal-rich asteroid of the same name orbiting the Sun between Jupiter and Mars in pursuit of studying the exposed nickel-iron core of an early planet, one of the building blocks of our solar system. The mission will also demonstrate NASA’s first deep space test of the Deep Space Optical Communications (DSOC) system high-bandwidth optical communications through space and back to Earth from distances far exceeding the Moon using a near-infrared laser.
+                </p>
+            </div>
+        </div>
+    </div>
+</Layout>

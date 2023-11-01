@@ -1,0 +1,47 @@
+---
+import ButtonBack from "../components/ButtonBack.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Starship Flight Test">
+    <div class="w-full mb-0">
+        <ButtonBack direction="/"/>
+        <!-- Muestra la imagen de la pagina -->
+        <div class="h-screen w-full">
+          <div 
+              class="w-full h-screen bg-no-repeat bg-cover bg-center flex justify-start items-center" 
+              style="background-image: url(https://sxcontent9668.azureedge.us/cms-assets/assets/Starship_Flight_Test_007_Desktop_75a84279f5.jpg);">
+          </div>
+        </div>
+        <!-- Se muestra la fecha y el titulo -->
+        <div class="h-24 m-0 block relative py-0 -mt-52 ">
+            <div class="text-left w-1/2 max-w-lg ml-12 mt-60">
+                <p class="uppercase opacity-100 font-semibold m-0 mb-5 text-sm md:text-lg text-gray-500">April 20, 2023</p>
+                <h1 class="m-auto font-bold text-lg md:text-2xl lg:text-4xl uppercase opacity-100">Starship Flight Test</h1>
+            </div>
+        </div>
+        <!-- Se muestra el contenido -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-2 gap-5 px-12 py-0 my-8 w-auto">
+            <div class="text-left mt-5 text-sm font-mono"
+                style="flex-basis: 50%;"
+            >
+                <p class="lg:mt-5 -mt-12">
+                    Starship gave us quite a show during today’s first flight test of a fully integrated Starship and Super Heavy rocket from Starbase in Texas. 
+                <br>
+                <br>
+                At 8:33 a.m. CT, Starship successfully lifted off from the orbital launch pad for the first time. The vehicle cleared the pad and beach as Starship climbed to an apogee of ~39 km over the Gulf of Mexico the highest of any Starship to-date. The vehicle experienced multiple engines out during the flight test, lost altitude, and began to tumble. The flight termination system was commanded on both the booster and ship. As is standard procedure, the pad and surrounding area was cleared well in advance of the test, and we expect the road and beach near the pad to remain closed until tomorrow.
+                </p>
+            </div>
+            <div class="text-left mt-5 text-sm font-mono"
+                style="flex-basis: 50%;"
+            >
+                <p class="lg:mt-5 md:-mt-12 sm:-mt-12 mt-0">
+                    With a test like this, success comes from what we learn, and we learned a tremendous amount about the vehicle and ground systems today that will help us improve on future flights of Starship.
+                <br>
+                <br>
+                Thank you to our customers, Cameron County, and the wider community for the continued support and encouragement. And congratulations to the entire SpaceX team on an exciting first flight test of Starship!
+                </p>
+            </div>
+        </div>
+    </div>
+</Layout>

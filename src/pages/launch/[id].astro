@@ -1,0 +1,59 @@
+---
+import type { GetStaticPaths } from "astro";
+import { getLatestLaunches, getLaunchBy } from '../../service/spacesx'
+import Layout from "../../layouts/Layout.astro"
+import ButtonBack from "../../components/ButtonBack.astro";
+import ButtonYouTube from "../../components/ButtonYouTube.astro";
+import DetailsCards from "../../components/DetailsCards.astro";
+import Navigation from "../../components/Navigation";
+
+// Desestructura el parámetro 'id' del objeto 'params' de Astro
+const {id} = Astro.params
+
+let launch
+
+// Si 'id' existe, obtén datos del lanzamiento por ID
+if(id){
+    launch= await getLaunchBy({id})
+}
+
+export async function getStaticPaths ()  {
+    const launches = await getLatestLaunches()
+
+    return launches.map((launch) => ({
+        params: { id: launch.id },
+    }))
+    
+}
+
+// Función para formatear una fecha como una cadena de texto
+function formatDate(date: Date): string {
+  const opciones: Intl.DateTimeFormatOptions = {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+    hour: '2-digit',
+    minute: '2-digit',
+  };
+  return date.toLocaleDateString(undefined, opciones);
+}
+
+// Función para insertar espacios antes de las letras mayúsculas en una cadena
+function insertSpacesBeforeUppercase(name: string): string {
+  return name.replace(/([A-Z])/g, ' $1').trim();
+}
+
+---
+
+<Layout title={`Lanzamiento ${id}`}>
+    <ButtonBack direction="/launches"/>
+    <div class="flex gap-4 flex-col items-center mt-10">
+        <img class="my-5 w-1/4 h-1/4" src={launch?.links?.patch.small} alt={launch?.name}>
+        <h1 class="text-3xl uppercase font-extrabold text-white">{insertSpacesBeforeUppercase(launch?.name || '')}</h1>
+    </div>
+    <div class="uppercase flex flex-col items-start m-5 text-gray-400">
+        <h3>{formatDate(new Date(launch!.date_utc!))}</h3>
+    </div>
+    <DetailsCards detailsCard={launch?.details}/>
+    <ButtonYouTube webcastUrl={launch?.links.webcast}/>
+</Layout>

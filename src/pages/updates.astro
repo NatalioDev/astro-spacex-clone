@@ -1,0 +1,27 @@
+---
+import SectionUpdates from "../components/SectionUpdates.astro";
+import Layout from "../layouts/Layout.astro"
+
+---
+
+<Layout title="Updates SpaceX">
+    <div class="h-screen w-full mb-8">
+        <div class="h-full w-full">
+            <!-- Contiene la Imagen de fondo y el title (igual al Layout) -->
+            <div 
+                class="sm:h-screen w-full h-3/4 bg-no-repeat bg-cover bg-center flex flex-col justify-center items-center" 
+                style="background-image: url(https://www.spacex.com/static/images/backgrounds/Updates_Header.jpg);">
+                <h2 class= "text-white uppercase text-4xl sm:text-5xl lg:text-6xl font-bold text-center my-auto">Updates</h2>
+                <!-- Flecha indica que hay mas contenido al bajar -->
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" 
+                        stroke-width="1.5" stroke="currentColor" class="w-8 h-8 mb-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                    </svg>
+                </span>
+            </div>
+        </div>
+    </div>
+    <!-- Contenido de la página -->
+    <SectionUpdates/>
+</Layout>

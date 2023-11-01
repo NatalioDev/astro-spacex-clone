@@ -1,0 +1,30 @@
+---
+import Header from "../components/Header.astro";
+import Layout from "../layouts/Layout.astro"
+---
+
+<Layout title="About SpaceX">
+    <header class="h-screen w-full mb-8">
+        <div class="h-full sm:h-screen w-full">
+            <div 
+                class="w-full h-full bg-no-repeat bg-cover bg-center flex justify-center items-center" 
+                style="
+                    background-image: url(https://www.spacex.com/static/images/backgrounds/mission_feature.jpg);
+                    background-size: cover;
+                ">
+                <div class=" w-[90%] max-w-[960px] text-center absolute">
+                    <p>
+                        “You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars.” -Elon Musk 
+                    </p>
+                </div>
+                
+            </div>
+            <div class="w-full -mb-5 h-5 flex justify-center ">
+                <a class="uppercase text-2xl font-semibold lg:text-2xl text-gray-400 hover:text-white hover:mr-1" href="https://www.spacex.com/updates/">More</a>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="mx-1 text-gray-400 w-6 h-9">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M11.25 4.5l7.5 7.5-7.5 7.5m-6-15l7.5 7.5-7.5 7.5" />
+                </svg>
+            </div>
+        </div>
+    </header>
+</Layout>

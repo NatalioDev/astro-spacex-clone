@@ -1,0 +1,114 @@
+---
+import ButtonBack from "../components/ButtonBack.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Dragon Earth">
+    <div class="w-full mb-0">
+        <ButtonBack direction="/"/>
+        <!-- Muestra la imagen de la pagina -->
+        <div class="h-screen w-full">
+            <div 
+                class="w-full h-screen bg-no-repeat bg-cover bg-center flex justify-start items-center" 
+                style="background-image: url(https://sxcontent9668.azureedge.us/cms-assets/assets/52730130251_ac4d1d97e0_o_DESKTOP_f948352f5d.jpg);">
+            </div>
+        </div>
+        <!-- Se muestra la fecha y el titulo -->
+        <div class="md:h-24 h-8 m-0 block relative py-0 -mt-52 ">
+            <div class="text-left w-1/2 max-w-lg ml-12 mt-60">
+                <p class="uppercase opacity-100 font-semibold m-0 mb-5 text-sm md:text-lg text-gray-500">September 3, 2023</p>
+                <h1 class="m-auto font-bold text-lg md:text-2xl lg:text-4xl uppercase opacity-100">Dragon and Crew-6 Return to Earth</h1>
+            </div>
+        </div>
+        <!-- Se muestra el contenido -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-2 gap-5 px-12 py-0 my-8 w-auto">
+            <div class="text-left mt-5 text-sm font-mono"
+                style="flex-basis: 50%;"
+            >
+                <p class="mt-5">
+                    After almost 186 days in space, Dragon and Crew-6 NASA astronauts Stephen Bowen and Woody Hoburg, Rocosmos cosmonaut Andrey Fedyaev, and UAE (United Arab Emirates) astronaut Sultan Alneyadi returned to Earth and splashed down off the coast of Florida at 12:17 a.m. ET on Monday, September 4.
+                </p>
+            </div>
+            <div class="text-left mt-5 text-sm font-mono"
+                style="flex-basis: 50%;"
+            >
+                <p class="sm:mt-5 mt-0">
+                    Falcon 9 launched Dragon and Crew-6 to the orbiting laboratory on Thursday, March 2 at 12:34 a.m. ET from Launch Complex 39A (LC-39A) at Kennedy Space Center in Florida.
+                </p>
+            </div>
+        </div>
+        <!-- Envuelve las imagenes de los pilotos -->
+        <div class="h-full m-0 p-0 block w-full relative text-center">
+            <div class="w-full h-full py-0 px-12 relative max-w-7xl my-0 mx-auto block"
+                style="box-sizing: border-box;"
+            >
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 text-center">
+                    <!-- Imagen piloto Read Stephen Bowen's -->
+                    <div style="flex-basis: 50%;">
+                        <a 
+                            href="https://www.nasa.gov/astronauts/biographies/stephen-g-bowen"
+                            target="_"
+                            aria-label="Read Stephen Bowen's bio"
+                        >
+                            <!-- El src contiene el link para saber más sobre el piloto -->
+                            <img 
+                                class="max-w-full border-0 p-0"
+                                title="Stepehen Bowen"
+                                src="https://sxcontent9668.azureedge.us/cms-assets/assets/1_31_23_SPACEX_Crew_6_Portrait_Stephen_Bowen_dcf9b75c12.jpg" 
+                                alt="Stepehen Bowen">
+                            <span>Stepehen Bowen</span>
+                        </a>
+                    </div>
+                    <!-- Imagen piloto Read Warren "Woody" Hoburg's -->
+                    <div style="flex-basis: 50%;">
+                        <a 
+                            href="https://www.nasa.gov/astronauts/biographies/warren-hoburg"
+                            target="_"
+                            aria-label=`Read Warren "Woody" Hoburg's bio`
+                        >
+                            <!-- El src contiene el link para saber más sobre el piloto -->
+                            <img 
+                                class="max-w-full border-0 p-0"
+                                title=`Warren "Woody" Hoburg`
+                                src="https://sxcontent9668.azureedge.us/cms-assets/assets/1_31_23_SPACEX_Crew_6_Portrait_Woody_Hoburg_af35fcf854.jpg" 
+                                alt=`Warren "Woody" Hoburg`>
+                            <span>Warren "Woody" Hoburg</span>
+                        </a>
+                    </div>
+                    <!-- Imagen piloto Read Andrey Fedyaev's -->
+                    <div style="flex-basis: 50%;">
+                        <a 
+                            href="https://www.gctc.ru/main.php?id=1716"
+                            target="_"
+                            aria-label="Read Andrey Fedyaev's bio"
+                        >
+                            <!-- El src contiene el link para saber más sobre el piloto -->
+                            <img 
+                                class="max-w-full border-0 p-0"
+                                title="Andrey Fedyaev"
+                                src="https://sxcontent9668.azureedge.us/cms-assets/assets/1_31_23_SPACEX_Crew_6_Portrait_Andrey_Fedyaev_cc7818d76f.jpg" 
+                                alt="Andrey Fedyaev">
+                            <span>Andrey Fedyaev</span>
+                        </a>
+                    </div>
+                    <!-- Imagen piloto Read Sultan Alneyadi's -->
+                    <div style="flex-basis: 50%;">
+                        <a 
+                            href="https://www.mbrsc.ae/team/sultan_saif/"
+                            target="_"
+                            aria-label="Read Sultan Alneyadi's bio"
+                        >
+                            <!-- El src contiene el link para saber más sobre el piloto -->
+                            <img 
+                                class="max-w-full border-0 p-0"
+                                title="Sultan Alneyadi"
+                                src="https://sxcontent9668.azureedge.us/cms-assets/assets/1_31_23_SPACEX_Crew_6_Portrait_Sultan_Alneyadi_3583a04d1d.jpg" 
+                                alt="Sultan Alneyadi">
+                            <span>Sultan Alneyadi</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</Layout>

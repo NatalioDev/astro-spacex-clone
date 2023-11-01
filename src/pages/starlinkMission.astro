@@ -1,0 +1,41 @@
+---
+import ButtonBack from "../components/ButtonBack.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Starlink Mission">
+    <div class="w-full mb-0">
+        <ButtonBack direction="/"/>
+        <!-- Muestra la imagen de la pagina -->
+        <div class="h-screen w-full">
+            <div 
+                class="w-full h-screen bg-no-repeat bg-cover bg-center flex justify-start items-center" 
+                style="background-image: url(https://sxcontent9668.azureedge.us/cms-assets/assets/Star6_23_101723_DSC_8218_desktop_58d002596c.jpg);">
+            </div>
+        </div>
+        <!-- Se muestra la fecha y el titulo -->
+        <div class="h-24 m-0 block relative py-0 -mt-52 ">
+            <div class="text-left w-1/2 max-w-lg ml-12 mt-60">
+                <p class="uppercase opacity-100 font-semibold m-0 mb-5 text-sm md:text-lg text-gray-500">October 17, 2023</p>
+                <h1 class="m-auto font-bold text-lg md:text-2xl lg:text-4xl uppercase opacity-100">Starlink Mission</h1>
+            </div>
+        </div>
+        <!-- Se muestra el contenido -->
+        <div class="grid sm:grid-cols-2 lg:grid-cols-2  gap-5 px-12 py-0 my-8 lg:mt-0 w-auto">
+            <div class="text-left mt-5 text-sm font-mono"
+                style="flex-basis: 50%;"
+            >
+                <p class="lg:mt-5 -mt-12">
+                    On Tuesday, October 17 at 8:39 p.m. ET, Falcon 9 launched 22 Starlink satellites to low-Earth orbit from Space Launch Complex 40 (SLC-40) at Cape Canaveral Space Force Station in Florida.
+                </p>
+            </div>
+            <div class="text-left mt-5 text-sm font-mono"
+                style="flex-basis: 50%;"
+            >
+                <p class="lg:mt-5 md:-mt-12 sm:-mt-12 mt-0">
+                    This is the 16th flight for the first stage booster supporting this mission, which previously launched GPS III Space Vehicle 04, GPS III Space Vehicle 05, Inspiration4, Ax-1, Nilesat 301, OneWeb Launch 17, ARABSAT BADR-8, and now nine Starlink missions.
+                </p>
+            </div>
+        </div>
+    </div>
+</Layout>

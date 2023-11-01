@@ -1,0 +1,63 @@
+---
+// Definición de una interfaz para las propiedades del componente
+interface Props {
+	id: string
+	img: string
+	success: boolean
+	name: string
+	details: string | null
+}
+
+// Desestructuración de las propiedades del componente
+const {success, name, img, id, details } = Astro.props
+
+// Cálculo de successText en función de la propiedad success
+const successText = success ? "Éxito" : "Fracaso"
+
+
+// Función para insertar espacios antes de letras mayúsculas en un nombre
+function insertSpacesBeforeUppercase(name: string): string {
+  return name.replace(/([A-Z])/g, ' $1').trim();
+}
+
+---
+
+
+<!-- Elemento de hipervínculo <a></a> que envuelve la tarjeta que muestra los lanzamientos -->
+<a 
+	href={`/launch/${id}`}
+	class="
+		rounded-lg border shadow-md bg-transparent border-gray-700
+		hover:scale-105 hover:bg-gray-700 hover:border-gray-500 transition
+		flex flex-col
+	"
+>
+<!-- Elemento <picture> que contiene una imagen del lanzamiento -->
+	<picture
+		class="flex justify-center p-4"
+	>
+		<img class="mb-5 rounded-lg" src={img} alt={`Patch for launch ${id}`}>
+	</picture>
+<!-- Encabezado que muestra el estado del lanzamiento (Fracaso/Exito) y el nombre  -->
+	<header>
+		<span
+			class={`mx-3 text-xs font-semibold font-mono mr-2 px-2.5 py-0.5 rounded ${
+				success ? "bg-green-500 text-white" : "bg-red-600 text-white"
+			}`}
+		>{successText}</span>
+		<h2
+			class="my-2 mx-3 text-2xl font-bold uppercase text-center font-mono tracking-tight text-white"
+		>
+		{insertSpacesBeforeUppercase(name || '')}
+		</h2>
+		<p
+			class="mb-4 mx-3 font-medium text-gray-300"
+		>
+		<!-- Muestra detalles truncados si existen -->
+			{details !== null && details?.length > 100 
+				? details?.slice(0,100) + "..." 
+				: details}
+		</p>
+	</header>
+</a>
+

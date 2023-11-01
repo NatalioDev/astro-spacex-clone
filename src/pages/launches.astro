@@ -1,0 +1,14 @@
+---
+import Header from "../components/Header.astro";
+import Layout from "../layouts/Layout.astro"
+import LaunchesData from "../components/LaunchesData.astro";
+
+---
+<!-- Envuelve nuestra app -->
+<Layout title="About SpaceX">
+    <!-- Importamos el componente header y le pasamos un title -->
+    <Header title="Launches"/>
+    <!-- Acá se muestra el contenido de los lanzamientos extraidos de la API -->
+    <LaunchesData />
+</Layout>
+
