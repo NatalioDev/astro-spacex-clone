@@ -5,7 +5,6 @@ import Layout from "../../layouts/Layout.astro"
 import ButtonBack from "../../components/ButtonBack.astro";
 import ButtonYouTube from "../../components/ButtonYouTube.astro";
 import DetailsCards from "../../components/DetailsCards.astro";
-import Navigation from "../../components/Navigation";
 
 // Desestructura el parámetro 'id' del objeto 'params' de Astro
 const {id} = Astro.params
@@ -46,7 +45,7 @@ function insertSpacesBeforeUppercase(name: string): string {
 ---
 
 <Layout title={`Lanzamiento ${id}`}>
-    <ButtonBack direction="/astro-spacex-clone/launches"/>
+    <ButtonBack direction="/launches"/>
     <div class="flex gap-4 flex-col items-center mt-10">
         <img class="my-5 w-1/4 h-1/4" src={launch?.links?.patch.small} alt={launch?.name}>
         <h1 class="text-3xl uppercase font-extrabold text-white">{insertSpacesBeforeUppercase(launch?.name || '')}</h1>
