@@ -5,7 +5,7 @@ import react from "@astrojs/react";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://NatalioDev.github.io',
+  site: 'https://nataliodev.github.io',
   base: '/astro-spacex-clone',
   integrations: [tailwind(), react()]
 });
