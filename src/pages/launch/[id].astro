@@ -46,7 +46,7 @@ function insertSpacesBeforeUppercase(name: string): string {
 ---
 
 <Layout title={`Lanzamiento ${id}`}>
-    <ButtonBack direction="/launches"/>
+    <ButtonBack direction="/astro-spacex-clone/launches"/>
     <div class="flex gap-4 flex-col items-center mt-10">
         <img class="my-5 w-1/4 h-1/4" src={launch?.links?.patch.small} alt={launch?.name}>
         <h1 class="text-3xl uppercase font-extrabold text-white">{insertSpacesBeforeUppercase(launch?.name || '')}</h1>

@@ -32,7 +32,7 @@ export default function Navigation() {
     >
     <div className= " lg:max-w-screen-lg my-7 mx-12">
       <div className="grid lg:flex top-12 lg:left-[50px] w-full justify-items-center h-auto">
-        <a className="relative" href="/">
+        <a className="relative" href="/astro-spacex-clone/">
           <img src="/spacex-logo-png-transparent2.png" alt="SpaceX Logo" />
         </a>
       </div>
@@ -57,9 +57,9 @@ export default function Navigation() {
         <Sidebar open={open} setOpen={setOpen}/>
         <div className="hidden lg:inline-block lg:left-[485px] lg:text-left pl-[420px] -mt-5">
           <ul className='relative m-0 p-0'>
-            <li className="hover:text-blue-600 relative inline-block my-0 mx-5 cursor-pointer text-gray-50 text-sm font-bold uppercase opacity-100"><a href="/launches">Launches</a></li>
-            <li className="hover:text-blue-600 relative inline-block my-0 mx-5 cursor-pointer text-gray-50 text-sm font-bold uppercase opacity-100"><a href="/updates">Updates</a></li>
-            <li className="hover:text-blue-600 relative inline-block my-0 mx-5 cursor-pointer text-gray-50 text-sm font-bold uppercase opacity-100"><a href="/mission">Mission</a></li>
+            <li className="hover:text-blue-600 relative inline-block my-0 mx-5 cursor-pointer text-gray-50 text-sm font-bold uppercase opacity-100"><a href="/astro-spacex-clone/launches">Launches</a></li>
+            <li className="hover:text-blue-600 relative inline-block my-0 mx-5 cursor-pointer text-gray-50 text-sm font-bold uppercase opacity-100"><a href="/astro-spacex-clone/updates">Updates</a></li>
+            <li className="hover:text-blue-600 relative inline-block my-0 mx-5 cursor-pointer text-gray-50 text-sm font-bold uppercase opacity-100"><a href="/astro-spacex-clone/mission">Mission</a></li>
             <li className="hover:text-blue-600 relative inline-block my-0 mx-5 cursor-pointer text-gray-50 text-sm font-bold uppercase opacity-100"><a href="https://shop.spacex.com/">Shop</a></li>
           </ul>
         </div>
