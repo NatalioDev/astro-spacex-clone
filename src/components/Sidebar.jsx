@@ -48,7 +48,7 @@ const Sidebar = ({ open = false, setOpen }) => {
                 <hr className="my-2 border-gray-800"/>
               </div>
               <div className="hover:text-gray-500 text-white cursor-pointer uppercase text-end w-full">
-                <a href="/contact">Contact</a>
+                <a href="https://shop.spacex.com/">Shop</a>
                 <hr className="my-2 border-gray-800"/>
               </div>
             </div>
