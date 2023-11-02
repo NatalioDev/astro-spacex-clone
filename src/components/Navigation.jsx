@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Sidebar from './Sidebar';
+import Sidebar from './Sidebar.jsx';
 
 export default function Navigation() {
   const [open, setOpen] = useState(false)
@@ -33,7 +33,7 @@ export default function Navigation() {
     <div className= " lg:max-w-screen-lg my-7 mx-12">
       <div className="grid lg:flex top-12 lg:left-[50px] w-full justify-items-center h-auto">
         <a className="relative" href="/">
-          <img src="./spacex-logo-png-transparent2.png" alt="SpaceX Logo" />
+          <img src="/spacex-logo-png-transparent2.png" alt="SpaceX Logo" />
         </a>
       </div>
       <div className="flex items-center">
