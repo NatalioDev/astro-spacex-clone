@@ -6,6 +6,6 @@ interface Props {
 const { detailsCard } = Astro.props;
 ---
 <!-- Component details para mostrar los dettalles del lanzamientos si existe sino un mensaje por defecto -->
-<div class="flex flex-col items-start font-mono text-bold text-2xl m-5">
+<div class="flex flex-col items-start font-mono text-bold lg:text-2xl text-lg m-5">
     <p>{ detailsCard || "No details to show" }</p>
 </div>
