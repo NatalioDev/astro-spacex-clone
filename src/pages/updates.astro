@@ -9,8 +9,7 @@ import Layout from "../layouts/Layout.astro"
         <div class="h-full w-full">
             <!-- Contiene la Imagen de fondo y el title (igual al Layout) -->
             <div 
-                class="sm:h-screen w-full h-3/4 bg-no-repeat bg-cover bg-center flex flex-col justify-center items-center" 
-                style="background-image: url(https://www.spacex.com/static/images/backgrounds/Updates_Header.jpg);">
+                class="sm:h-screen w-full h-3/4 bg-no-repeat bg-cover bg-center flex flex-col justify-center items-center update-bg">
                 <h2 class= "text-white uppercase text-4xl sm:text-5xl lg:text-6xl font-bold text-center my-auto">Updates</h2>
                 <!-- Flecha indica que hay mas contenido al bajar -->
                 <span>
@@ -25,3 +24,9 @@ import Layout from "../layouts/Layout.astro"
     <!-- Contenido de la página -->
     <SectionUpdates/>
 </Layout>
+
+<style>
+    .update-bg{
+        background-image: url(../images/Updates_Header.jpg);
+    }
+</style>

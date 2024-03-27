@@ -7,11 +7,8 @@ import Layout from "../layouts/Layout.astro"
     <header class="h-screen w-full mb-8">
         <div class="h-full sm:h-screen w-full">
             <div 
-                class="w-full h-full bg-no-repeat bg-cover bg-center flex justify-center items-center" 
-                style="
-                    background-image: url(https://www.spacex.com/static/images/backgrounds/mission_feature.jpg);
-                    background-size: cover;
-                ">
+                class="w-full h-full bg-no-repeat bg-cover bg-center flex justify-center items-center mission-bg" 
+                >
                 <div class=" w-[90%] max-w-[960px] text-center absolute">
                     <p>
                         “You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be better than the past. And I can’t think of anything more exciting than going out there and being among the stars.” -Elon Musk 
@@ -28,3 +25,10 @@ import Layout from "../layouts/Layout.astro"
         </div>
     </header>
 </Layout>
+
+<style>
+    .mission-bg{
+        background-image: url(../images/mission_feature.jpg);
+        background-size: cover;
+    }
+</style>

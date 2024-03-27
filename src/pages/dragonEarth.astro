@@ -9,8 +9,7 @@ import Layout from "../layouts/Layout.astro";
         <!-- Muestra la imagen de la pagina -->
         <div class="h-screen w-full">
             <div 
-                class="w-full h-screen bg-no-repeat bg-cover bg-center flex justify-start items-center" 
-                style="background-image: url(https://sxcontent9668.azureedge.us/cms-assets/assets/52730130251_ac4d1d97e0_o_DESKTOP_f948352f5d.jpg);">
+                class="w-full h-screen bg-no-repeat bg-cover bg-center flex justify-start items-center dragon-earth-bg">
             </div>
         </div>
         <!-- Se muestra la fecha y el titulo -->
@@ -54,7 +53,7 @@ import Layout from "../layouts/Layout.astro";
                             <img 
                                 class="max-w-full border-0 p-0"
                                 title="Stepehen Bowen"
-                                src="https://sxcontent9668.azureedge.us/cms-assets/assets/1_31_23_SPACEX_Crew_6_Portrait_Stephen_Bowen_dcf9b75c12.jpg" 
+                                src="/src/images/SPACEX_Crew_6_Portrait_Stephen_Bowen.jpg" 
                                 alt="Stepehen Bowen">
                             <span>Stepehen Bowen</span>
                         </a>
@@ -70,7 +69,7 @@ import Layout from "../layouts/Layout.astro";
                             <img 
                                 class="max-w-full border-0 p-0"
                                 title=`Warren "Woody" Hoburg`
-                                src="https://sxcontent9668.azureedge.us/cms-assets/assets/1_31_23_SPACEX_Crew_6_Portrait_Woody_Hoburg_af35fcf854.jpg" 
+                                src="/src/images/SPACEX_Crew_6_Portrait_Woody_Hoburg.jpg" 
                                 alt=`Warren "Woody" Hoburg`>
                             <span>Warren "Woody" Hoburg</span>
                         </a>
@@ -86,7 +85,7 @@ import Layout from "../layouts/Layout.astro";
                             <img 
                                 class="max-w-full border-0 p-0"
                                 title="Andrey Fedyaev"
-                                src="https://sxcontent9668.azureedge.us/cms-assets/assets/1_31_23_SPACEX_Crew_6_Portrait_Andrey_Fedyaev_cc7818d76f.jpg" 
+                                src="/src/images/SPACEX_Crew_6_Portrait_Andrey_Fedyaev.jpg"
                                 alt="Andrey Fedyaev">
                             <span>Andrey Fedyaev</span>
                         </a>
@@ -102,7 +101,7 @@ import Layout from "../layouts/Layout.astro";
                             <img 
                                 class="max-w-full border-0 p-0"
                                 title="Sultan Alneyadi"
-                                src="https://sxcontent9668.azureedge.us/cms-assets/assets/1_31_23_SPACEX_Crew_6_Portrait_Sultan_Alneyadi_3583a04d1d.jpg" 
+                                src="/src/images/SPACEX_Crew_6_Portrait_Sultan_Alneyadi.jpg"
                                 alt="Sultan Alneyadi">
                             <span>Sultan Alneyadi</span>
                         </a>
@@ -112,3 +111,9 @@ import Layout from "../layouts/Layout.astro";
         </div>
     </div>
 </Layout>
+
+<style>
+    .dragon-earth-bg{
+        background-image: url(../images/DragonAndCrew6.jpg);
+    }
+</style>

@@ -12,13 +12,15 @@ const { title } = Astro.props;
 <header class="h-screen w-full mb-8">
     <div class="h-full sm:h-screen w-full">
         <div 
-            class="w-full h-full bg-no-repeat bg-cover bg-center flex justify-center items-center" 
-            style="
-                background-image: url(https://sxcontent9668.azureedge.us/cms-assets/assets/Star6_25_103023_DSC_0398_desktop_a88f7568e0.jpg);
-                background-size: cover;
-            ">
+            class="w-full h-full bg-no-repeat bg-cover bg-center flex justify-center items-center header-bg">
             <!-- Título del encabezado -->
             <h2 class= "text-white uppercase text-2xl md:text-4xl lg:text-6xl font-bold text-center my-auto">{title}</h2>
         </div>
     </div>
 </header>
+
+<style>
+    .header-bg{
+    background-image: url(../images/Star6_25.jpg);
+    }
+</style>

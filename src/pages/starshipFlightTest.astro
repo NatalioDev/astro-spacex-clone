@@ -9,8 +9,7 @@ import Layout from "../layouts/Layout.astro";
         <!-- Muestra la imagen de la pagina -->
         <div class="h-screen w-full">
           <div 
-              class="w-full h-screen bg-no-repeat bg-cover bg-center flex justify-start items-center" 
-              style="background-image: url(https://sxcontent9668.azureedge.us/cms-assets/assets/Starship_Flight_Test_007_Desktop_75a84279f5.jpg);">
+              class="w-full h-screen bg-no-repeat bg-cover bg-center flex justify-start items-center starship-flight-test">
           </div>
         </div>
         <!-- Se muestra la fecha y el titulo -->
@@ -45,3 +44,9 @@ import Layout from "../layouts/Layout.astro";
         </div>
     </div>
 </Layout>
+
+<style>
+    .starship-flight-test{
+        background-image: url(../images/Starship_Flight_Test_007.jpg);
+    }
+</style>

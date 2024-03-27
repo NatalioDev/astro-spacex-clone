@@ -1,12 +1,12 @@
 ---
-//Code
+
 ---
 
 <div class="w-full mb-0">
   <div class="h-full w-full">
     <!-- Sección 1: Starlink Mission -->
-    <div class="w-full h-screen bg-no-repeat bg-cover bg-center flex justify-start items-center" 
-        style="background-image: url(https://www.spacex.com/static/images/backgrounds-2022/eutelsat-hotbird-13f/post-launch/Launches_Desktop.jpg);">
+    <div 
+      class="w-full h-screen bg-no-repeat bg-cover bg-center flex justify-start items-center starlink-mission">
       <div class="text-center md:text-left w-full max-w-lg ml-0 md:ml-12 mt-4 md:mt-0">
         <p class="uppercase opacity-100 m-0 text-lg md:text-xl">RECENT LAUNCH</p>
         <h1 class="m-auto font-bold text-3xl md:text-5xl uppercase opacity-100">Starlink Mission</h1>
@@ -16,7 +16,8 @@
       </div>
     </div>
     <!-- Sección 2: Psyche Mission -->
-    <div class="w-full h-screen bg-no-repeat bg-cover bg-center flex justify-start items-center" style="background-image: url(https://sxcontent9668.azureedge.us/cms-assets/assets/Psyche_outside39abmound_IMG_8486_desktop_f5072ad69b.jpg)">
+    <div 
+      class="w-full h-screen bg-no-repeat bg-cover bg-center flex justify-start items-center psyche-mission">
       <div class="text-center md:text-left w-full max-w-lg ml-0 md:ml-12 mt-4 md:mt-0">
         <p class="uppercase opacity-100 m-0 text-lg md:text-xl">RECENT LAUNCH</p>
         <h1 class="m-auto font-bold text-3xl md:text-5xl uppercase opacity-100">Psyche Mission</h1>
@@ -26,7 +27,7 @@
       </div>
     </div>
     <!-- Sección 3: Dragon and Crew-6 Return to Earth -->
-    <div class="w-full h-screen bg-no-repeat bg-cover bg-center flex justify-start items-center" style="background-image: url(https://sxcontent9668.azureedge.us/cms-assets/assets/Crew_6_Desktop_9857f5c2f0.jpg)">
+    <div class="w-full h-screen bg-no-repeat bg-cover bg-center flex justify-start items-center dragon-and-crew-6">
       <div class="text-center md:text-left w-full max-w-lg ml-0 md:ml-12 mt-4 md:mt-0">
         <p class="uppercase opacity-100 m-0 text-lg md:text-xl">RECENT LAUNCH</p>
         <h1 class="m-auto font-bold text-3xl md:text-5xl uppercase opacity-100">Dragon and Crew-6 Return to Earth</h1>
@@ -36,7 +37,7 @@
       </div>
     </div>
     <!-- Sección 4: Starship Flight Test -->
-    <div class="w-full h-screen bg-no-repeat bg-cover bg-center flex justify-start items-center" style="background-image: url(https://sxcontent9668.azureedge.us/cms-assets/assets/STARSHIP_Testflight_DESKTOP_2b3bea613a.jpg)">
+    <div class="w-full h-screen bg-no-repeat bg-cover bg-center flex justify-start items-center starship-flight-test">
       <div class="text-center md:text-left w-full max-w-lg ml-0 md:ml-12 mt-4 md:mt-0">
         <h1 class="m-auto font-bold text-3xl md:text-5xl uppercase opacity-100">Starship Flight Test</h1>
         <button class="mt-4 md:mt-7 min-w-28 px-4 py-3 font-mono font-semibold inline-block uppercase border-2 hover:text-black hover:bg-white">
@@ -47,3 +48,18 @@
   </div>
 </div>
 
+<style>
+    .starlink-mission{
+  background-image: url(../images/Launches_Desktop.jpg);
+}
+    .psyche-mission{
+  background-image: url(../images/Psyche_desktop.jpg);
+}
+    .dragon-and-crew-6{
+  background-image: url(../images/Crew_6_Desktop.jpg);
+}
+    .starship-flight-test{
+  background-image: url(../images/STARSHIP_Testflight_DESKTOP.jpg);
+}
+
+</style>
