@@ -47,7 +47,7 @@ function insertSpacesBeforeUppercase(name: string): string {
     <ButtonBack direction="/launches"/>
     <div class="flex gap-4 flex-col items-center mt-10">
         <img class="my-5 w-1/2 h-1/2 lg:w-1/4 lg:h-1/4" src={launch?.links?.patch.small} alt={launch?.name}>
-        <h1 class="lg:text-3xl text-xl uppercase font-extrabold text-white">{insertSpacesBeforeUppercase(launch?.name || '')}</h1>
+        <h1 class="text-3xl uppercase font-extrabold text-white">{insertSpacesBeforeUppercase(launch?.name || '')}</h1>
     </div>
     <div class="uppercase flex flex-col items-start m-5 text-gray-400">
         <h3>{formatDate(new Date(launch!.date_utc!))}</h3>
